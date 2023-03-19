@@ -7,15 +7,16 @@
     <title>SheCodes project</title>
 
     <style>
-        body {
-            margin: 0;
-            background: rgb(144, 205, 197);
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 15px 20px;
+            background: radial-gradient(circle at 7.5% 24%, rgb(237, 161, 193) 0%, rgb(250, 178, 172) 25.5%, rgb(190, 228, 210) 62.3%, rgb(215, 248, 247) 93.8%);
         }
 
         h1 {
             color: #6643bd;
-            font-size: 38px;
-            text-decoration: underline;
+            font-size: 35px;
             text-align: center;
             transition: all 500ms cubic-bezier(0.075, 0.82, 0.165, 1);
         }
@@ -41,17 +42,30 @@
             transition: all 500ms cubic-bezier(0.075, 0.82, 0.165, 1);
         }
 
+        button:hover {
+             background: white;
+        color: #1a64d6;
+        border: 1px solid #1a64d6;
+        }
+
+        ul {
+             list-style: none;
+             color: #3b1b8d;
+             text-decoration: none;
+        }
+
         .list {
-            list-style: none;
             margin: 16px auto;
             padding: 0;
-            /* visibility: hidden; */
+            visibility: hidden;
             opacity: 0;
+            max-width: 90%;
         }
 
         .active {
-            /* visibility: visible; */
+            visibility: visible;
             opacity: 1;
+            
         }
 
 
@@ -59,11 +73,14 @@
             display: block;
             height: auto;
             margin: 20px auto;
+            border-radius: 15px;
+            max-width: 70%;
         }
 
     </style>
 </head>
-<body>
+<div class="container">
+
     <h1>What are your plans for the weekend?</h1>
     <strong>
         On this site you will find a lot of inspirational ideas for yourself
@@ -74,16 +91,16 @@
 
     <ul class="list">
         <li><img src="https://www.sport-oesterreich.at/sites/default/files/styles/inline-fullwidth/public/articles/insertimages/bereiche%20die%20den%20sport%20gepr%C3%A4gt%20haben.jpg?itok=3pVvxnw3"
-            width="300" class="sport"/>
+         class="sport"/>
         </li>
 
-        <li><img src="https://i1.adis.ws/i/canon/canon-get-inspired-party-1-1920?$og-image$" width="300" class="party"/>
+        <li><img src="https://i1.adis.ws/i/canon/canon-get-inspired-party-1-1920?$og-image$" class="party"/>
         </li>
 
-        <li><img src="https://i1.adis.ws/i/canon/canon-get-inspired-party-1-1920?$og-image$" width="300" class="books"/>
+        <li><img src="https://s26162.pcdn.co/wp-content/uploads/sites/2/2022/05/Book.jpg" class="books"/>
         </li>
     </ul>
-
+</div>
 
     
     
